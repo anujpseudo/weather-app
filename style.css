@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Alan Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 40vw;
+    height: auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    opacity: 0.8;
+
+    .weather-header {
+        .weather-search {
+            i {
+                font-size: 15px;
+                position: relative;
+                color: white;
+                left: 13rem;
+                top: 0.35rem;
+            }
+
+            .city-name {
+                position: absolute;
+                background-color: #000;
+                color: white;
+                padding: 0.5rem;
+                width: 15rem;
+                border: none;
+                border-radius: 0.95rem;
+                -webkit-border-radius: 0.95rem;
+                -moz-border-radius: 0.95rem;
+                -ms-border-radius: 0.95rem;
+                -o-border-radius: 0.95rem;
+
+                &::placeholder {
+                    color: white;
+                    font-size: 14px;
+                    position: relative;
+                    left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .weather-body {
+        margin: 2rem 1rem 1rem 1rem;
+        text-align: center;
+
+        .weather-data {
+            .weather-forecast {
+                margin-top: 1rem;
+                background-color: #000;
+                border-radius: 1rem;
+                color: white;
+                width: 20%;
+                justify-self: center;
+                padding: 0.25rem;
+            }
+        }
+
+        .weather-temperature {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .weather-minmax {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+    }
+
+    .weather-info {
+        margin: 1rem;
+        display: grid;
+        place-content: center;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        .weather-card {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 0.75rem;
+            border-radius: 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            div {
+                font-size: 0.9rem;
+
+                p:first-child {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (width <= 1024px) {
+    .container {
+        width: 50vw;
+    }
+}
+
+@media (width <= 768px) {
+    .container {
+        width: 70vw;
+    }
+}
