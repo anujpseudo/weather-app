@@ -128,10 +128,16 @@ body {
     .container {
         width: 75vw;
 
+        .weather-body .weather-data .weather-forecast {
+            width: 50%;
+        }
+
         .weather-info {
             grid-template-rows: repeat(4, 1fr);
             grid-template-columns: repeat(1, 1fr);
             justify-self: center;
+            margin: 1rem 0;
+            width: 100%;
 
             .weather-card {
                 justify-content: center;
