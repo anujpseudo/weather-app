@@ -74,14 +74,14 @@
             // getting wind speed
                 windspeed.innerHTML = `${(wind.speed*3.6).toFixed(3)} km/hr`;
             // getting pressure
-                pressure.innerHTML = `${main.pressure}hPa`;
+                pressure.innerHTML = `${main.pressure} hPa`;
 
             // changing background based on weather
                 if(weather[0].main === 'Clouds') {
                     document.body.style.backgroundImage = "url('./images/clouds.webp')";
                 } else if(weather[0].main === 'Clear') {
                     document.body.style.backgroundImage = "url('./images/clear-sky.webp')";
-                } else if(weather[0].main === 'Haze' || weather[0].main === 'Mist' || weather[0].main === 'Fog') {
+                } else if(weather[0].main === 'Haze' || weather[0].main === 'Mist' || weather[0].main === 'Fog' || weather[0].main === 'Smoke') {
                     document.body.style.backgroundImage = "url('./images/fog.webp')";
                 } else if(weather[0].main === 'Snow') {
                     document.body.style.backgroundImage = "url('./images/snow.webp')";
