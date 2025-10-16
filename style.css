@@ -123,3 +123,25 @@ body {
         width: 70vw;
     }
 }
+
+@media (width <= 522px) {
+    .container {
+        width: 80vw;
+
+        .weather-info {
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            width: 60%;
+            justify-self: center;
+
+            .weather-card {
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    gap: 0.25rem;
+                }
+            }
+        }
+    }
+}
