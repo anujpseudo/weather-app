@@ -129,7 +129,7 @@ body {
         width: 75vw;
 
         .weather-body .weather-data .weather-forecast {
-            width: 50%;
+            width: 75%;
         }
 
         .weather-info {
